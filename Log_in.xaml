@@ -1,0 +1,180 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Log_in" this:Log_in.Username="Sachin9090" this:Log_in.Password="Achins@38" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mca="clr-namespace:Microsoft.CSharp.Activities;assembly=System.Activities" xmlns:ra="clr-namespace:ReporterForUiPath.Activities;assembly=ReporterForUiPath.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:this="clr-namespace:" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="Username" Type="InArgument(x:String)" />
+    <x:Property Name="Password" Type="InArgument(x:String)" />
+  </x:Members>
+  <sap2010:ExpressionActivityEditor.ExpressionActivityEditor>C#</sap2010:ExpressionActivityEditor.ExpressionActivityEditor>
+  <sap:VirtualizedContainerService.HintSize>914,1617</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Text</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>ReporterForUiPath.Enums</x:String>
+      <x:String>ReporterForUiPath.Activities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.CSharp</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>ReporterForUiPath</AssemblyReference>
+      <AssemblyReference>ReporterForUiPath.Activities</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Log_in" sap:VirtualizedContainerService.HintSize="924,1552" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" DisplayName="Use Browser Chrome: Adactin.com - Hotel Reservation System" sap:VirtualizedContainerService.HintSize="882,1460" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="bc9d2ab2-c94e-4b10-be2c-6e61a68f363c" Version="V1">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="848,1244" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Username'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="806,216" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="bc9d2ab2-c94e-4b10-be2c-6e61a68f363c" Version="V1">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://adactinhotelapp.com/" DesignTimeRectangle="973, 317, 158, 31" ElementType="InputBox" FriendlyName="'INPUT username'" FullSelectorArgument="&lt;webctrl parentid='login_form' tableRow='1' tag='TABLE' /&gt;&lt;webctrl tableRow='2' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='login_form' tag='TABLE' /&gt;&lt;webctrl type='text' tag='INPUT' class='login_input' aaname='' /&gt;" Guid="7fd39213-d666-479e-98d2-0dfe5293f2d5" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAKIAAAAjCAYAAAAXHtFmAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACWSURBVHhe7dIxCsMwAATBvFrP1hdsXCTIkFraYgauunY/c87L7PSEaIm9QhxjmG3b2t4vxOeAndYYhcgxQiRBiCQIkQQhkiBEEoRIghBJECIJQiRBiCQIkQQhkiBEEoRIghBJECIJQiRBiCQIkQQhkiBEEoRIghBJECIJQiRBiCQIkYS/IX5jNNu1tb1XiGanJkQLbF43MQJXxkcM6RsAAAAASUVORK5CYII=" InformativeScreenshot="e79081a66550708e7c4a155ed5c14e0e.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Adactin.com - Hotel Reservation System' /&gt;" SearchSteps="Selector, Image" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="817, 315, 154, 35" ElementType="Text" FriendlyName="'Username'" FullSelectorArgument="&lt;webctrl parentid='login_form' tableRow='1' tag='TABLE' /&gt;&lt;webctrl tableRow='2' tag='TD' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='login_form' tag='TABLE' /&gt;&lt;webctrl type='' tag='TD' class='' aaname='Username ' check:innerText='Username' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAJ4AAAAnCAYAAAD+QPHGAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHpSURBVHhe7dbBlYIwFEBRGuRMPR46wUqwBpcuqIIWMpAQSH6+ioaZv3mLuzBAAPNOtLnfnVtM0wT8G8KDCcKDCcKDCcKDCcKDCcKDCcKDCcKDCcKDCcKDCcKDCcKDCcKDCcKDCcKrcetc07Suf8hjo+t/GtdeRzGOiPBqEN7XCK/GJ+H5c5tE54bkmvHaZse7mzj207sxmWM5ro3L55HzFs/rr52fRZkjvzZ/Xu/Ru3Y7PrsM+fEXCK+GX6wD4fkFKoOIcW0BrcfigmbHlYXVxofL/DmZK73Pfk0SUQxOzqGNpfcv3im8s3zGZwivxtHw4q6SnRMNrlPmSBe6CHOljr+810LcTzv/wNjyfMVfibf33hFeDf9FHwjPL/a6i8zSHaj4uUqdFN62gyW2ZzgQWTm27m5izoDw/p7yExrI8CIlwKdz7L4Pb71fdk4YOyO88v2OI7wqYhHfjkfpwr07tyI8H7UI6JTwlP98HyK8SuFnLF8kP5YEsQSS7w754oc5xK43L3S8pi68POr4s1sbXvgsd735vZTn1BDeCeJibuSXr/yPkz9TPqLsnD3Er8PbPu/zdrdzdjzvwHs9Q3gwQXgwQXgwQXgwQXgwQXgwQXgwQXgwQXgwQXgwQXgwQXgwQXgwQXgwMLlfhxUQ6mRR66YAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.Text>
+                <InArgument x:TypeArguments="x:String">
+                  <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_1">Username</mca:CSharpValue>
+                </InArgument>
+              </uix:NTypeInto.Text>
+            </uix:NTypeInto>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Password'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="554,216" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="bc9d2ab2-c94e-4b10-be2c-6e61a68f363c" Version="V1">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://adactinhotelapp.com/" DesignTimeRectangle="973, 352, 158, 31" ElementType="InputBoxPassword" FriendlyName="'INPUT password'" FullSelectorArgument="&lt;webctrl parentid='login_form' tableRow='1' tag='TABLE' /&gt;&lt;webctrl tableRow='3' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='login_form' tag='TABLE' /&gt;&lt;webctrl type='password' tag='INPUT' class='login_input' aaname='' /&gt;" Guid="dc12bdc9-83fd-4629-b29e-13d47df9c3e6" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAKIAAAAjCAYAAAAXHtFmAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACWSURBVHhe7dIxCsMwAATBvFrP1hdsXCTIkFraYgauunY/c87L7PSEaIm9QhxjmG3b2t4vxOeAndYYhcgxQiRBiCQIkQQhkiBEEoRIghBJECIJQiRBiCQIkQQhkiBEEoRIghBJECIJQiRBiCQIkQQhkiBEEoRIghBJECIJQiRBiCQIkYS/IX5jNNu1tb1XiGanJkQLbF43MQJXxkcM6RsAAAAASUVORK5CYII=" InformativeScreenshot="9a601d182f6aa9586310675f450193b2.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Adactin.com - Hotel Reservation System' /&gt;" SearchSteps="Selector, Image" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="817, 350, 154, 35" ElementType="Text" FriendlyName="'Password'" FullSelectorArgument="&lt;webctrl parentid='login_form' tableRow='1' tag='TABLE' /&gt;&lt;webctrl tableRow='3' tag='TD' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='login_form' tag='TABLE' /&gt;&lt;webctrl type='' tag='TD' class='' aaname='Password ' check:innerText='Password' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAJ4AAAAnCAYAAAD+QPHGAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIrSURBVHhe7ZfbjcIwEEXTINp6UDqBSqAGPvmgClrw+hVn/AggFu2V0Pk4ErFnbKM5jMl0uTgXuN/vAP8G4oEExAMJiAcSEA8kIB5IQDyQgHggAfFAAuKBBMQDCYgHEhAPJCAeSEA8+BAnN0+Tm8+juR7E+zg3d/iZ3OSLYNkdb4PYbwLxxGTx9qd17Hpwu6+XD/HEDMTznPZ+7Ofgbsvn3AkTszuZ2FHXtNJ2+Xmv23Hnn+1avQwx157tPFdr1T+OJd+cJ3+HspbJDSCejFfE27nDdTxXnqt8L0Cej3KZ2LRfli12VrP2IlVZK52tyBHn7VmSaKt86bmOSbRnHkn+CMT7OAPxsgCbRYnCLJ0q5W9dy72Ulrr4IXY+mrUbMUdr1WJvyNQK/ih2A8T7OFk8XwRLXZBRzFrIdGXm8aqreKqrsb2irUxBhDBvulzILeuZcbtG9SPYkCmeod0b8cRkqba6UixsMz/sIO8JWDpWmM97hLHQQeNc2feP4rXnQTw1T8QbFW1DvMKww2Ta3CzO7Dtfua7jnn6sEe3tq3Z4HsQT84J4lWQ5voyFAtZFXWUIsY2gnQRJgNFLQ/eS0J0lxbUvF71M6cz2f2iUGPGUPBHPE0WKImQZznXXWoq4sopV5wYamZb8pquOxiJRvnW9+qVmS7x1bsmbz49iexAPJCAeSEA8kIB4IAHxQALigQTEAwmIBxIQDyQgHkhAPJCAeCAB8UAC4oGAu/sFIMocpElDN1UAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.Text>
+                <InArgument x:TypeArguments="x:String">
+                  <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_2">Password</mca:CSharpValue>
+                </InArgument>
+              </uix:NTypeInto.Text>
+            </uix:NTypeInto>
+            <uix:NClick ClickType="Single" DisplayName="Click 'Login'" sap:VirtualizedContainerService.HintSize="806,156" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="bc9d2ab2-c94e-4b10-be2c-6e61a68f363c" Version="V1">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://adactinhotelapp.com/" DesignTimeRectangle="973, 418, 100, 30" ElementType="Button" FriendlyName="'Login'" FullSelectorArgument="&lt;webctrl parentid='login_form' tableRow='1' tag='TABLE' /&gt;&lt;webctrl tableRow='6' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='login_form' tag='TABLE' /&gt;&lt;webctrl type='Submit' tag='INPUT' class='login_button' aaname='Login' check:text='Login' /&gt;" Guid="bc3d6dae-9eca-4d0e-af50-51787b739a61" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGgAAAAiCAYAAACz35yrAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFYSURBVGhD7ZrBjcMgEEVp0FKq8cGiCl9JJY5cRg40YZcwGyBxsAFppY2Wj/MPT7I0Yw7z9IEDalkWIbhQEDibIGutjOMofd+TijgHzkUiyBXmeZZ1XUlFnAPnIhHk7OV+IP+Pc0FBwFAQOBQEDgWBQ0HgUBA4FAQOuKBJtFKib7naX7BiLkq6q83UsKCgbB2HLxXUDs0LstdO1KPHczFi4/rdSLfVtOgtNXGCnt+DfvcqLVO8TkXaFnTT0TDDoNUwPeuHbcz3lgWV16lL04Km4TDIWJhPTyfm/upPpaTfoTdZtyINC0oHuxO0S9exn4I+BBPUtKB9SsKg34M9DN73UtCHCYLCzSoiuq39+hY3mIIUCgIhiCimEZQTC3Lpi84gv8XFZ1IbnDpBu+3vQWvpcZxa0BmgIHAoCBwKAoeCwMkK4tNfDIpPf/l4HgPnIPt4nmBCQdAs8gPh3RNsDmqTRAAAAABJRU5ErkJggg==" InformativeScreenshot="e047d1ac92bb6fb99ecddf5823dc73af.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Adactin.com - Hotel Reservation System' /&gt;" SearchSteps="Selector, Image" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NCheckState Exists="{x:Null}" DisplayName="Check App State 'Welcome to'" sap:VirtualizedContainerService.HintSize="806,442" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="bc9d2ab2-c94e-4b10-be2c-6e61a68f363c" Version="V1">
+              <uix:NCheckState.IfExists>
+                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="376,226" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ra:StepStatus ActualResult="{x:Null}" CodeBlock="{x:Null}" ContinueOnError="{x:Null}" ExpectedResult="{x:Null}" statusInfo="{x:Null}" Description="Login successful" DisplayName="Step Status" sap:VirtualizedContainerService.HintSize="334,132" sap2010:WorkflowViewState.IdRef="StepStatus_1" Name="Login" Status="Pass" TakeScreenshot="True" />
+                </Sequence>
+              </uix:NCheckState.IfExists>
+              <uix:NCheckState.IfNotExists>
+                <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="376,226" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ra:StepStatus ActualResult="{x:Null}" CodeBlock="{x:Null}" ContinueOnError="{x:Null}" ExpectedResult="{x:Null}" statusInfo="{x:Null}" Description="Login fail" DisplayName="Step Status" sap:VirtualizedContainerService.HintSize="334,132" sap2010:WorkflowViewState.IdRef="StepStatus_2" Name="Login" Status="Fail" TakeScreenshot="True" />
+                </Sequence>
+              </uix:NCheckState.IfNotExists>
+              <uix:NCheckState.Target>
+                <uix:TargetAnchorable BrowserURL="https://adactinhotelapp.com/SearchHotel.php" DesignTimeRectangle="8, 273, 313, 75" ElementType="Text" FriendlyName="'Welcome to'" FullSelectorArgument="&lt;webctrl idx='2' tag='TABLE' /&gt;&lt;webctrl isleaf='1' tableRow='1' tag='TD' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl isleaf='1' type='' tag='TD' class='welcome_menu' aaname='Welcome to Adactin Group of Hotels' check:innerText='Welcome to Adactin Group of Hotels' /&gt;" Guid="e742cd7d-4be6-452f-b637-81c02b890097" ImageBase64="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" InformativeScreenshot="4580a8c7c3389c634f5232c4083de25d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Adactin.com - Search Hotel' /&gt;" SearchSteps="Selector" Visibility="Interactive" />
+              </uix:NCheckState.Target>
+            </uix:NCheckState>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1382, 744" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="2f1f60f7d17064ccc7472898938ed00e.png" Selector="&lt;html app='chrome.exe' title='Adactin.com - Hotel Reservation System' /&gt;" Url="https://adactinhotelapp.com/" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
